@@ -12,3 +12,8 @@ jobs:
       - run: make say-hello
       - run: ls -la
       - uses: hexlet-components/hello-from-hexlet-action@release
+      - uses: actions/setup-node@v4
+      - run: npm install
+      - run: npm run lint
+      - name: run tests
+        run: npm test
