@@ -1,0 +1,12 @@
+name: say-hello
+# on - определяет события, которые запускают workflow
+on: push
+jobs:
+  # build - произвольно выбранное имя задания
+  # их может быть больше одного
+  build:
+    # операционная система для работы workflow
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/ckeckout@v4
+      - run: make say-hello
