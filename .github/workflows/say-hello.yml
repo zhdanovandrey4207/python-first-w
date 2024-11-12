@@ -8,5 +8,5 @@ jobs:
     # операционная система для работы workflow
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/ckeckout@v4
+      - uses: actions/checkout@v4
       - run: make say-hello
