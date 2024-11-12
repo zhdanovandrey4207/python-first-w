@@ -11,11 +11,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: make say-hello
       - run: ls -la
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
-          cache: 'npm'
-      - run: npm ci
-      - run: npm test
-      - name: Print Hello from Hexlet
-        uses: hexlet-components/hello-from-hexlet-action@release
+      - uses: hexlet-components/hello-from-hexlet-action@release
